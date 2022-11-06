@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-5</title>
+    <style>
+        /**/
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /**/
+        
+        body {
+            background-color: grey;
+            color: whitesmoke;
+        }
+        /**/
+        
+        #container-0 {
+            margin: 4px;
+            padding: 5px;
+        }
+        
+        #container-0 h1 {
+            margin: 5px;
+            padding: 10px;
+            font-size: 50px;
+            text-align: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: black;
+            border: 5px solid whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        #container-0 h2 {
+            margin: 5px;
+            padding: 10px;
+            font-size: 45px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #container-0 p {
+            margin: 5px;
+            padding: 5px;
+            font-size: 30px;
+            margin-left: 35px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /**/
+        
+        #container-1 {
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        #container-1 h1 {
+            margin-left: 40px;
+            font-size: 49px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /**/
+        
+        #container-2 {
+            margin: 1px;
+            padding: 1px;
+            margin-left: 325px;
+        }
+        
+        #container-2 h1 {
+            font-size: 49px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #container-2 p {
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            margin-left: 45px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /**/
+        
+        .droupdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .droupdown span {
+            font-size: 30px;
+            margin-left: 380px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .droupdown-content {
+            margin-left: 600px;
+            /**/
+            display: none;
+            color: white;
+            position: absolute;
+            border-radius: 15px;
+            background-color: red;
+            border: 4px solid black;
+            min-width: 165px;
+            box-shadow: 5px 10px 15px 20px 25px whitesmoke;
+            padding: 12px 20px;
+            z-index: 10px;
+        }
+        
+        .droupdown:hover .droupdown-content {
+            display: block;
+        }
+        
+        .droupdown-content p {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /**/
+        
+        #container-3 {
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        #container-3 h1 {
+            font-size: 49px;
+            margin-left: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /**/
+        
+        #container-4 {
+            margin: 3px;
+            padding: 4px;
+        }
+        
+        #container-4 h1 {
+            font-size: 49px;
+            margin-left: 335px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        #container-4 p {
+            margin: 3px;
+            padding: 4px;
+            font-size: 25px;
+            margin-left: 375px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /**/
+        
+        #container-5 {
+            border-radius: 5px;
+            background-color: red;
+            border: 4px solid black;
+            height: 530px;
+            width: 1299px;
+            align-items: center;
+            margin: auto;
+        }
+        /**/
+        
+        #container-5 ul {
+            border: 5px solid whitesmoke;
+            background-color: black;
+            display: flex;
+            padding: 5px;
+            margin: 5px;
+            /**/
+            list-style: none;
+        }
+        
+        #container-5 li {
+            margin-left: 2px;
+        }
+        
+        #container-5 ul li a {
+            text-decoration: none;
+            margin: 15px;
+            padding: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-0">
+        <h1>CSS-Droupdown</h1>
+        <h2>Basis-Dropdown:-</h2>
+        <p>Create a dropdown box that appears when the user moves the mouse over an element.</p>
+    </div>
+    <hr>
+    <!---->
+    <div id="container-1">
+        <h1>Example:-1</h1>
+    </div>
+    <!---->
+    <div id="container-2">
+        <h1>Dropdown Menu:-</h1>
+        <p>Create a dropdown menu that allows the user to choose an option from a list:</p>
+    </div>
+    <!---->
+    <div class="droupdown">
+        <span>Create a hoverable dropdown with CSS.</span>
+        <br>
+        <br>
+        <div class="droupdown-content">
+            <br>
+            <p>Hello Wourld!</p>
+            <br>
+        </div>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!---->
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
